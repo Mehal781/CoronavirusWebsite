@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>COVID-19</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: grey;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2017/02/10/16/29/abstract-2055567__480.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: black;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .title {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .title h1 {
+            color: white;
+            font-size: 70px;
+        }
+
+        .button {
+            position: absolute;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .btn {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.6s ease;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .features {
+            background: #177C76;
+            color: #177C76;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .features figure {
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 200px;
+        }
+
+        .card_container {
+            margin-top: 6em;
+        }
+
+        .column {
+            float: left;
+            width: 30%;
+            padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+         
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="/Users/manashbhattacharya/Desktop/CoronavirusWebsite/style.css" /> -->
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="data.html">Precautions</a></li>
+                <!-- <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#"> Data</a></li> -->
+                <!-- <li><a href="#">People's Experiences</a></li> -->
+                <!-- <li><a href="#">Quaratine</a></li> -->
+                <!-- <li><a href="#">The Good</a></li> -->
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Precautions</h1>
+        </div>
+        <div class="button">
+            <!-- <a href="#" class="btn">Video</a> -->
+            <!-- <a href="#" class="btn">Tutorial</a> -->
+        </div>
+        <section class="card_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="card">
+                            <h2><a href="https://www.cdc.gov/">CDC Website</a></h2>
+                            <hr />
+                            <blockquote>
+                                Currently, there is no vaccine that prevents the spread of the coronavirus pandemic.
+                                As a result, it is imperative that people take actions such as social distancing,
+                                wash their hands, avoid touching their face, and avoid people who are sick or suspected
+                                to have the virus. People of all ages can be infected by the virus.
+                            </blockquote>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="p1.jpg" alt="Covid Precautions" style="width:100%">
+                                </div>
+                                <div class="column">
+                                    <img src="ill_people.png" alt="Covid Precautions" style="width:100%">
+                                </div>
+                                <div class="column">
+                                    <img src="household_mem.png" alt="Covid Precautions" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </header>
+</body>
+
+</html>
